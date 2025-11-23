@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files - Exclude large CSV files (>50MB)
+data/raw/*.csv
+data/processed/*.csv
+
+# Keep small sample data for testing
+!data/raw/sample_*.csv
+!data/processed/sample_*.csv
+
+# Model files - Exclude trained models (can be regenerated)
+outputs/models/*.pkl
+outputs/models/*.pth
+outputs/models/*.h5
+outputs/models/*.joblib
+
+# Keep model metadata
+!outputs/models/model_info.txt
+!outputs/models/README.md
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+
+# Large output files
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+outputs/visualizations/*.png
+
+# Large log files
+logs/*.log
+
+# Exclude large processed datasets
+data/processed/ais_all_features.csv
+
+# Keep documentation and configs
+!*.md
+!*.yaml
+!*.json
+!requirements.txt

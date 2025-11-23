@@ -1,0 +1,169 @@
+================================================================================
+  IUU FISHING DETECTION - GITHUB PUSH INSTRUCTIONS
+================================================================================
+
+✅ REPOSITORY IS ORGANIZED AND READY TO PUSH!
+
+All documentation files have been moved to the "project_docs" folder.
+Only README.md remains in the root directory.
+
+================================================================================
+  STEP 1: INSTALL GIT (IF NOT ALREADY INSTALLED)
+================================================================================
+
+Git is required to push to GitHub. Download and install from:
+https://git-scm.com/download/win
+
+After installation:
+1. Run the installer with default settings
+2. Restart your terminal/PowerShell
+3. Verify installation by running: git --version
+
+================================================================================
+  STEP 2: PUSH TO GITHUB (CHOOSE ONE METHOD)
+================================================================================
+
+METHOD 1: AUTOMATED SCRIPT (EASIEST) ⭐
+---------------------------------------
+1. Double-click: PUSH_TO_GITHUB.bat
+2. Follow the prompts
+3. Enter GitHub credentials when asked
+4. Done!
+
+METHOD 2: MANUAL COMMANDS
+--------------------------
+Open PowerShell in this directory and run:
+
+git init
+git config user.name "Amogh0108"
+git config user.email "amogh@example.com"
+git remote add origin https://github.com/Amogh0108/illegal_fishing_detection.git
+git add .
+git commit -m "Complete IUU Fishing Detection System with organized documentation"
+git push -u origin main
+
+If "main" branch doesn't work, try:
+git push -u origin master
+
+METHOD 3: GITHUB DESKTOP (GUI)
+-------------------------------
+1. Download GitHub Desktop: https://desktop.github.com/
+2. Sign in with your GitHub account
+3. Click "Add" > "Add Existing Repository"
+4. Browse to this folder
+5. Click "Publish repository"
+
+================================================================================
+  AUTHENTICATION
+================================================================================
+
+GitHub requires a Personal Access Token (not password):
+
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token" (classic)
+3. Select scope: "repo" (full control of private repositories)
+4. Generate and COPY the token immediately
+5. When prompted for password during push, use the TOKEN
+
+================================================================================
+  WHAT WILL BE PUSHED
+================================================================================
+
+✅ INCLUDED (~5-10 MB):
+- All source code (src/)
+- All scripts (scripts/)
+- README.md (root)
+- project_docs/ folder with all documentation
+- Configuration files
+- Batch launchers
+- Small data files (indian_eez.geojson)
+
+❌ EXCLUDED (by .gitignore):
+- Large CSV files (data/raw/*.csv, data/processed/*.csv)
+- Trained models (outputs/models/*.pkl, *.pth)
+- Log files (logs/*.log)
+- Python cache (__pycache__/)
+- Virtual environments (venv/, env/)
+
+================================================================================
+  REPOSITORY STRUCTURE AFTER PUSH
+================================================================================
+
+illegal_fishing_detection/
+├── README.md                    ← Main README (root)
+├── project_docs/                ← All other documentation
+│   ├── README.md
+│   ├── PRESENTATION.md
+│   ├── QUICK_REFERENCE.md
+│   ├── DASHBOARD_QUICK_START.md
+│   └── ... (all other .md files)
+├── src/                         ← Source code
+├── scripts/                     ← Scripts
+├── config/                      ← Configuration
+├── data/                        ← Data (with README)
+├── outputs/                     ← Outputs (with README)
+├── docs/                        ← Technical docs
+└── requirements.txt             ← Dependencies
+
+================================================================================
+  VERIFY PUSH SUCCESS
+================================================================================
+
+After pushing, visit:
+https://github.com/Amogh0108/illegal_fishing_detection
+
+Check:
+✅ README.md displays on homepage
+✅ project_docs/ folder is visible
+✅ All source code folders present
+✅ No large files (>50MB)
+
+================================================================================
+  TROUBLESHOOTING
+================================================================================
+
+ERROR: "Git is not recognized"
+SOLUTION: Install Git from https://git-scm.com/download/win
+
+ERROR: "Permission denied"
+SOLUTION: Use Personal Access Token instead of password
+
+ERROR: "Large files detected"
+SOLUTION: Already handled! .gitignore excludes them
+
+ERROR: "Remote already exists"
+SOLUTION: Run: git remote remove origin
+          Then: git remote add origin https://github.com/Amogh0108/illegal_fishing_detection.git
+
+ERROR: "Push rejected"
+SOLUTION: Try: git pull origin main --rebase
+          Then: git push -u origin main
+          Or force: git push -u origin main --force (use carefully!)
+
+================================================================================
+  NEED HELP?
+================================================================================
+
+Documentation:
+- project_docs/GITHUB_PUSH_INSTRUCTIONS.md - Detailed guide
+- project_docs/READY_TO_PUSH.md - Checklist
+- Git docs: https://git-scm.com/doc
+- GitHub guides: https://guides.github.com/
+
+================================================================================
+  REPOSITORY URL
+================================================================================
+
+https://github.com/Amogh0108/illegal_fishing_detection.git
+
+================================================================================
+
+READY TO PUSH! 🚀
+
+Just run: PUSH_TO_GITHUB.bat
+
+Or follow the manual commands above.
+
+Good luck!
+
+================================================================================
