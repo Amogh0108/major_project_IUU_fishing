@@ -7,7 +7,7 @@ echo Starting enhanced pipeline execution...
 echo This will take approximately 5-10 minutes.
 echo.
 
-python scripts\run_enhanced_pipeline.py
+python ..\scripts\run_enhanced_pipeline.py
 
 echo.
 echo ======================================================================
