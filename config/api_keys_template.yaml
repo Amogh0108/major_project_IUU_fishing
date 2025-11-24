@@ -1,0 +1,57 @@
+# AIS Data API Keys Configuration
+# Copy this file to api_keys.yaml and add your actual API keys
+
+api_keys:
+  # AISHub - Free, community-driven (no key required for basic access)
+  # Register at: http://www.aishub.net/
+  aishub: "DEMO"  # Use DEMO for testing
+  
+  # MarineTraffic - Commercial API (paid)
+  # Register at: https://www.marinetraffic.com/en/ais-api-services
+  # Plans start from $50/month
+  marinetraffic: null  # Add your API key here
+  
+  # VesselFinder - Commercial with free tier
+  # Register at: https://www.vesselfinder.com/api
+  # Free tier: 100 requests/day
+  vesselfinder: null  # Add your API key here
+  
+  # AIS Stream - Real-time streaming (free tier available)
+  # Register at: https://aisstream.io/
+  # Free tier: 1000 messages/day
+  aisstream: null  # Add your API key here
+
+# Data fetching configuration
+data_fetching:
+  # Bounding box for Indian EEZ
+  indian_eez_bbox:
+    min_lat: 6
+    min_lon: 68
+    max_lat: 22
+    max_lon: 88
+  
+  # Update interval in minutes
+  update_interval: 15
+  
+  # Time range for historical data (minutes)
+  time_range: 60
+  
+  # Preferred provider (aishub, marinetraffic, vesselfinder, aisstream)
+  preferred_provider: "aishub"
+  
+  # Enable automatic fallback to other providers
+  auto_fallback: true
+
+# Data storage
+storage:
+  # Save fetched data to file
+  save_to_file: true
+  
+  # Output directory
+  output_dir: "data/raw"
+  
+  # Filename pattern
+  filename_pattern: "ais_live_{timestamp}.csv"
+  
+  # Keep historical data (days)
+  retention_days: 7
